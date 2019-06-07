@@ -1,1 +1,11 @@
-<h1>Show Cocktail</h1>
+<div class="container dose-bg">
+<h1><%= @cocktail.name %></h1>
+
+<% @cocktail.doses.each do |d| %>
+<%= d.ingredient.name %>
+<%= d.description %>
+<br>
+<% end %>
+
+
+</div>

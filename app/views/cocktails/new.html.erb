@@ -1,6 +1,8 @@
-<h1>Add a cocktail</h1>
+<div class="container">
+<%= render 'shared/navbar' %>
 
-<%= simple_form_for [@cocktail] do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "add a cocktail", class: "btn btn-primary" %>
-<% end %>
+  <div_><%= simple_form_for [@cocktail] do |f|%>
+      <%= f.input :name, :label => "Cocktail Name" %>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+    <% end %></div_>
+</div>
