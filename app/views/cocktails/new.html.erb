@@ -3,6 +3,9 @@
 
   <div_><%= simple_form_for [@cocktail] do |f|%>
       <%= f.input :name, :label => "Cocktail Name" %>
+
       <%= f.submit "Save", class: "btn btn-primary" %>
     <% end %></div_>
+<%= render 'shared/form' %>
+
 </div>

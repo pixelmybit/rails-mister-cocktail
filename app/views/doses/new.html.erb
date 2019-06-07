@@ -1,5 +1,5 @@
 <div class="container">
-<h1>Add dose</h1>
+<h1>Add dose to <%= @cocktail.name %></h1>
 
   <div_><%= simple_form_for [@cocktail, @dose] do |f| %>
       <%= f.input :description, :label => "Add an amount" %>
